@@ -8,7 +8,7 @@ use Yii;
  * This is the model class for table "tiktok".
  *
  * @property int $id
- * @property string $auth_token
+ * @property string $auth_code
  * @property int $create_at
  */
 class Tiktok extends \yii\db\ActiveRecord
@@ -27,9 +27,9 @@ class Tiktok extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['auth_token', 'create_at'], 'required'],
+            [['auth_code', 'create_at'], 'required'],
             [['create_at'], 'integer'],
-            [['auth_token'], 'string', 'max' => 255],
+            [['auth_code'], 'string', 'max' => 255],
         ];
     }
 
@@ -40,7 +40,7 @@ class Tiktok extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'auth_token' => 'Auth Token',
+            'auth_code' => 'Auth Code',
             'create_at' => 'Create At',
         ];
     }
