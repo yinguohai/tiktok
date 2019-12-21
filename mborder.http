@@ -1,0 +1,26 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+#POST http://openapi.mabangerp.com
+#Content-Type: application/json
+#
+#{
+#  "developerId": "100211",
+#  "authToken": "794f925874831537f1f81d0d4ff4ffb5",
+#  "version": "v3",
+#  "companyId": "156662",
+#  "action": "get-order-list",
+#  "status": 6,
+#  "timestamp": "1576251498%",
+#  "page": 1
+#}
+
+GET http://openapi.mabangerp.com?developerId=100211&authToken=794f925874831537f1f81d0d4ff4ffb5&version=v3&companyId=156662&action=get-order-list&status=6&timestamp=1576414403&page=1
+Accept: application/json
+
+###
+
+
